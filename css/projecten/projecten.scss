@@ -1,0 +1,103 @@
+$wit:rgb(255, 255, 255);
+;
+$gebrokenWit:rgb(250, 250, 250);
+$lichtGrijs:rgb(151, 153, 156);
+$donkerGrijs:#343a40;
+$goud:rgb(200, 175, 150);
+
+body {
+    .vpContainer {
+        position: relative;
+        min-height: 100vh;
+
+        main {
+            padding: 0;
+            margin:0;
+            
+            h1{
+                font-weight: bold;
+                font-size:3rem;
+                text-align: center;
+                margin-top: 1em;;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    margin: 0;
+                    margin-top: 1.5em;
+                    &:last-child{
+                        padding-bottom: 4em;
+                    }
+                    .card {
+                        width: 100%;
+                        background-color: $donkerGrijs;
+                        color: $gebrokenWit;
+
+                        .card-body {
+                            .btn {
+                                background-color: $lichtGrijs;
+                                border: 1px solid black;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $gebrokenWit;
+                                }
+
+                                &:hover {
+                                    background-color: $goud;
+                                }
+
+                                &:active {
+                                    background-color: $goud;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        .vpContainer {
+            main {    
+               h1{
+                   margin:1.2em auto;
+               }
+                ul {
+                    li {
+                        margin-top: 1.2em;
+                        &:last-child{
+                            padding-bottom: 7em;
+                        }
+                        .card {
+                            .card-body {
+                                font-size: 1.1em;
+                                .card-title{
+                                    font-size:1.7em;
+                                }
+                                .btn {
+                                    border: 1px solid black;
+                                    font-size: 1.1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

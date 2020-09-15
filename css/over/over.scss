@@ -1,0 +1,50 @@
+body {
+    .vpContainer {
+        position: relative;
+        min-height: 100vh;
+
+        main {
+            margin: 0;
+
+            .fotoContainer {
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .tekstContainer {
+                padding: 1em;
+                padding-bottom: 2.5em;
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        .vpContainer {
+            main {
+                .fotoContainer {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+    
+                .tekstContainer {
+                    margin-top: 2em;
+                    padding: 1.2em;
+                    padding-bottom: 7em;
+                    p{
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}

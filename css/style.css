@@ -1,0 +1,380 @@
+body {
+  background-color: #fafafa;
+}
+
+body .large {
+  display: none;
+}
+
+body header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  padding: 1em;
+  display: block;
+}
+
+body header ul li a:hover {
+  background-color: #c8af96;
+  color: white;
+  text-decoration: none;
+}
+
+body header ul li a:active {
+  font-weight: bold;
+}
+
+body header .btn {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border: 1px solid #97999c;
+  color: #97999c;
+  margin: 0.1em;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+body header .btn:hover {
+  color: #c8af96;
+}
+
+body main {
+  margin-top: 3em;
+}
+
+body main .vpContainerSmall {
+  position: relative;
+}
+
+body main .vpContainerSmall .overlayContainer:hover .img {
+  opacity: 0.4;
+}
+
+body main .vpContainerSmall .overlayContainer:hover .middle {
+  opacity: 1;
+}
+
+body main .vpContainerSmall .overlayContainer .fotoContainerSmall {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  background-color: black;
+}
+
+body main .vpContainerSmall .overlayContainer .fotoContainerSmall img {
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  position: relative;
+  left: 100%;
+  margin-left: -200%;
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+body main .vpContainerSmall .overlayContainer .middle {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+body main .vpContainerSmall .overlayContainer .middle .overlayTekst {
+  border-radius: 5px;
+  background-color: #c8af96;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+body main .vpContainerSmall .overlayContainer .middle .overlayTekst a {
+  text-decoration: none;
+  color: white;
+}
+
+body footer {
+  padding: 1em;
+  margin: 0;
+  background-color: #343a40;
+}
+
+body footer .footerTekstSmall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.5em;
+  color: #97999c;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  body header ul li a {
+    padding: 2em;
+  }
+  body header .btn {
+    border: 2px solid #97999c;
+    margin: 0.2em;
+    font-size: 30px;
+  }
+  body main {
+    margin-top: 5em;
+  }
+  body main .vpContainer .overlayContainer .fotoContainer {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+  }
+  body main .vpContainer .overlayContainer .fotoContainer img {
+    width: auto;
+    height: auto;
+    max-height: 100vh;
+    width: auto;
+    position: relative;
+    left: 100%;
+    margin-left: -200%;
+    opacity: 1;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  body main .vpContainer .overlayContainer .middle {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  body main .vpContainer .overlayContainer .middle .overlayTekst {
+    border-radius: 5px;
+    background-color: #c8af96;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  body main .vpContainer .overlayContainer .middle .overlayTekst a {
+    text-decoration: none;
+    color: white;
+  }
+  body footer {
+    padding: 2em;
+  }
+  body footer .footerTekstSmall {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+  }
+  body {
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    font-family: 'Lora', serif;
+  }
+  body .small {
+    display: none;
+  }
+  body .large {
+    display: block;
+  }
+  body h1 {
+    font-family: 'Gayathri', sans-serif;
+    text-align: center;
+  }
+  body .vpContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  body .vpContainer .tekst {
+    width: 60%;
+    height: 100%;
+  }
+  body .vpContainer .tekst .tekstContainer {
+    margin: 1em;
+    margin-top: 2em;
+    height: 100%;
+  }
+  body .vpContainer .fotoContainer {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  body .vpContainer .fotoContainer img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  body .vpContainer .fotoContainer img .foto {
+    width: 100%;
+    height: auto;
+  }
+  body .vpContainer .rechts img {
+    float: right;
+  }
+  body .contact .fotoConatainer {
+    height: 90%;
+  }
+  body .contact .tekst {
+    height: 90%;
+  }
+  body .contact footer {
+    width: 100%;
+    height: 10%;
+    padding: 1em;
+  }
+  body .contact footer .footerTekst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8em;
+    color: #97999c;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body header ul {
+    list-style-type: none;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header ul li a {
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+  }
+  body header ul li a:hover {
+    background-color: #97999c;
+    color: white;
+  }
+  body header ul li a:active {
+    font-weight: bold;
+  }
+  body main #over p {
+    margin-top: 1.8em;
+    font-size: 0.8em;
+  }
+  body main .projectenContainer {
+    display: block;
+    height: 70vh;
+    border: 1px solid black;
+    margin-top: 1.8em;
+    overflow: scroll;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+  }
+  body main .projectenContainer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  body main .projectenContainer ul li .card {
+    scroll-snap-align: start;
+    height: 35vh;
+  }
+  body main .projectenContainer ul li .card h5 {
+    font-size: 1em;
+  }
+  body main .projectenContainer ul li .card p {
+    font-size: 0.8em;
+  }
+  body main .projectenContainer ul li .card a {
+    font-size: 0.8em;
+  }
+  body main .kanalen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+    margin-top: 6em;
+  }
+  body main .kanalen a {
+    text-decoration: none;
+  }
+  body main .kanalen a:active {
+    font-weight: bold;
+  }
+  body main .kanalen a .kanaal {
+    text-align: center;
+  }
+  body main .kanalen a .kanaal:hover {
+    text-decoration: none;
+  }
+  body main .kanalen a .kanaal .circle-icon {
+    font-size: 3.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+  }
+  body main .kanalen a .kanaal .mail {
+    color: white;
+    background-color: #97999c;
+  }
+  body main .kanalen a .kanaal .linkedIn {
+    background-color: #007bff;
+    color: white;
+  }
+  body main .kanalen a .kanaal .github {
+    background-color: black;
+    color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */
