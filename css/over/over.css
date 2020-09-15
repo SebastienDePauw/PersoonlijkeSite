@@ -1,37 +1,47 @@
-body .vpContainer {
+body .vpContainerSmall {
   position: relative;
   min-height: 100vh;
 }
 
-body .vpContainer main {
+body .vpContainerSmall main {
   margin: 0;
 }
 
-body .vpContainer main .fotoContainer img {
+body .vpContainerSmall main .fotoContainer img {
   max-width: 100%;
 }
 
-body .vpContainer main .tekstContainer {
+body .vpContainerSmall main .tekstContainerSmall {
   padding: 1em;
   padding-bottom: 2.5em;
 }
 
-body .vpContainer footer {
+body .vpContainerSmall main .tekstContainerSmall h1 {
+  font-family: "Gayathri", sans-serif;
+  font-size: 2.3em;
+  text-align: center;
+}
+
+body .vpContainerSmall main .tekstContainerSmall .cv {
+  padding-bottom: 2.5em;
+}
+
+body .vpContainerSmall footer {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  body .vpContainer main .fotoContainer img {
+  body .vpContainerSmall main .fotoContainer img {
     max-width: 100%;
   }
-  body .vpContainer main .tekstContainer {
+  body .vpContainerSmall main .tekstContainerSmall {
     margin-top: 2em;
     padding: 1.2em;
     padding-bottom: 7em;
   }
-  body .vpContainer main .tekstContainer p {
+  body .vpContainerSmall main .tekstContainerSmall p {
     font-size: 1.3em;
   }
 }

@@ -1,12 +1,16 @@
-$wit:rgb(255,255, 255);
+$wit:rgb(255, 255, 255);
 $gebrokenWit:rgb(250, 250, 250);
+$warmWit:rgb(255, 255, 246);
 $lichtGrijs:rgb(151, 153, 156);
 $donkerGrijs:#343a40;
 $goud:rgb(200, 175, 150);
+$titelFont: 'Gayathri', sans-serif;
+$bodyFont:'Lora', serif;
+$navFont: 'Ubuntu', sans-serif;
 
 body {
-
-    .vpContainer {
+    font-family: $navFont;
+    .vpContainerSmall {
         position: relative;
         min-height: 100vh;
 
@@ -14,10 +18,9 @@ body {
             padding-bottom:3em;
 
             h1{
+                font-family: $titelFont;
                 text-align: center;
-                width: 100%;
-                font-weight: bold;
-                font-size: 3rem;
+                font-size: 2.5em;
             }
 
             .kanalen{
@@ -62,16 +65,18 @@ body {
 
 @media only screen and (min-width: 768px) {
     body {
-        .vpContainer {
+        .vpContainerSmall {
             main {
                 padding-bottom:7em;
+                h1{
+                    font: 2.5em;
+                }
                 .kanalen{
                     margin-top:5em;
                     margin:2em;
                     a{
                         .kanaal{
-                            margin: 1.5em auto;
-                            font-size: 3em;
+                            font-size: 2em;
                             padding: 0.3em;
                         }
                     }

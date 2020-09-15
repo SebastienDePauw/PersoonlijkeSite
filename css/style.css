@@ -1,5 +1,5 @@
 body {
-  background-color: #fafafa;
+  font-family: "Lora", serif;
 }
 
 body .large {
@@ -25,8 +25,10 @@ body header ul {
 body header ul li a {
   text-decoration: none;
   color: #fafafa;
-  padding: 1em;
+  padding: 1.2em 1.5em;
   display: block;
+  font-size: 1.2em;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body header ul li a:hover {
@@ -107,8 +109,8 @@ body main .vpContainerSmall .overlayContainer .middle .overlayTekst {
   border-radius: 5px;
   background-color: #c8af96;
   color: white;
-  font-size: 16px;
-  padding: 10px 20px;
+  font-size: 24px;
+  padding: 12px 24px;
 }
 
 body main .vpContainerSmall .overlayContainer .middle .overlayTekst a {
@@ -117,7 +119,7 @@ body main .vpContainerSmall .overlayContainer .middle .overlayTekst a {
 }
 
 body footer {
-  padding: 1em;
+  padding: 1.3em;
   margin: 0;
   background-color: #343a40;
 }
@@ -145,13 +147,13 @@ body footer .footerTekstSmall {
   body main {
     margin-top: 5em;
   }
-  body main .vpContainer .overlayContainer .fotoContainer {
+  body main .vpContainerSmall .overlayContainer .fotoContainer {
     width: 100%;
     text-align: center;
     overflow: hidden;
     background-color: black;
   }
-  body main .vpContainer .overlayContainer .fotoContainer img {
+  body main .vpContainerSmall .overlayContainer .fotoContainer img {
     width: auto;
     height: auto;
     max-height: 100vh;
@@ -165,7 +167,7 @@ body footer .footerTekstSmall {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
   }
-  body main .vpContainer .overlayContainer .middle {
+  body main .vpContainerSmall .overlayContainer .middle {
     -webkit-transition: .5s ease;
     transition: .5s ease;
     opacity: 0;
@@ -177,22 +179,22 @@ body footer .footerTekstSmall {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
-  body main .vpContainer .overlayContainer .middle .overlayTekst {
+  body main .vpContainerSmall .overlayContainer .middle .overlayTekst {
     border-radius: 5px;
     background-color: #c8af96;
     color: white;
     font-size: 16px;
     padding: 10px 20px;
   }
-  body main .vpContainer .overlayContainer .middle .overlayTekst a {
+  body main .vpContainerSmall .overlayContainer .middle .overlayTekst a {
     text-decoration: none;
     color: white;
   }
   body footer {
-    padding: 2em;
+    padding: 1.6em;
   }
   body footer .footerTekstSmall {
-    font-size: 1em;
+    font-size: 0.6em;
   }
 }
 
@@ -204,7 +206,7 @@ body footer .footerTekstSmall {
   body {
     -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
   }
   body .small {
     display: none;
@@ -213,7 +215,7 @@ body footer .footerTekstSmall {
     display: block;
   }
   body h1 {
-    font-family: 'Gayathri', sans-serif;
+    font-family: "Gayathri", sans-serif;
     text-align: center;
   }
   body .vpContainer {
@@ -243,7 +245,7 @@ body footer .footerTekstSmall {
     overflow: hidden;
   }
   body .vpContainer .fotoContainer img {
-    height: 100%;
+    min-width: 100%;
     width: auto;
     position: absolute;
     left: 50%;
@@ -251,33 +253,8 @@ body footer .footerTekstSmall {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  body .vpContainer .fotoContainer img .foto {
-    width: 100%;
-    height: auto;
-  }
   body .vpContainer .rechts img {
     float: right;
-  }
-  body .contact .fotoConatainer {
-    height: 90%;
-  }
-  body .contact .tekst {
-    height: 90%;
-  }
-  body .contact footer {
-    width: 100%;
-    height: 10%;
-    padding: 1em;
-  }
-  body .contact footer .footerTekst {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 0.8em;
-    color: #97999c;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
   }
   body header ul {
     list-style-type: none;
@@ -290,7 +267,6 @@ body footer .footerTekstSmall {
             justify-content: center;
   }
   body header ul li a {
-    font-family: 'Lora', serif;
     text-decoration: none;
     color: black;
     font-size: 1.2em;
@@ -299,23 +275,39 @@ body footer .footerTekstSmall {
     text-align: center;
     margin: 1em;
     padding: 1em;
+    font-family: "Ubuntu", sans-serif;
   }
   body header ul li a:hover {
     background-color: #97999c;
-    color: white;
+    color: #fafafa;
   }
   body header ul li a:active {
     font-weight: bold;
+    color: #c8af96;
   }
   body main #over p {
     margin-top: 1.8em;
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+  body main #over .cv {
+    margin-top: 2em;
+  }
+  body main #over .cv a {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    color: black;
+    text-decoration: none;
+  }
+  body main #over .cv a i {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
   }
   body main .projectenContainer {
     display: block;
     height: 70vh;
     border: 1px solid black;
-    margin-top: 1.8em;
+    margin-top: 2em;
     overflow: scroll;
     -ms-scroll-snap-type: y mandatory;
         scroll-snap-type: y mandatory;
@@ -330,15 +322,22 @@ body footer .footerTekstSmall {
     height: 35vh;
   }
   body main .projectenContainer ul li .card h5 {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
   }
   body main .projectenContainer ul li .card p {
-    font-size: 0.8em;
+    font-size: 1em;
   }
   body main .projectenContainer ul li .card a {
-    font-size: 0.8em;
+    font-size: 1em;
   }
-  body main .kanalen {
+  body main .contact .fotoContainer {
+    height: 93%;
+  }
+  body main .contact .tekst {
+    height: 93%;
+  }
+  body main .contact .tekst .tekstContainer .kanalen {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -347,34 +346,116 @@ body footer .footerTekstSmall {
     height: 100%;
     margin-top: 6em;
   }
-  body main .kanalen a {
+  body main .contact .tekst .tekstContainer .kanalen a {
     text-decoration: none;
   }
-  body main .kanalen a:active {
+  body main .contact .tekst .tekstContainer .kanalen a:active {
     font-weight: bold;
   }
-  body main .kanalen a .kanaal {
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal {
     text-align: center;
   }
-  body main .kanalen a .kanaal:hover {
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal:hover {
     text-decoration: none;
   }
-  body main .kanalen a .kanaal .circle-icon {
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal .circle-icon {
     font-size: 3.5em;
     padding: 0.5em;
     border-radius: 50%;
   }
-  body main .kanalen a .kanaal .mail {
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal .mail {
     color: white;
     background-color: #97999c;
   }
-  body main .kanalen a .kanaal .linkedIn {
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal .linkedIn {
     background-color: #007bff;
     color: white;
   }
-  body main .kanalen a .kanaal .github {
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal .github {
     background-color: black;
     color: white;
+  }
+  body main .contact footer {
+    width: 100%;
+    height: 7%;
+    padding: 1em;
+  }
+  body main .contact footer .footerTekst {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0.8em;
+    color: #97999c;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body h1 {
+    font-size: 3em;
+  }
+  body header .vpContainer .tekst .tekstContainer {
+    margin: 0 1em;
+    padding: 0;
+  }
+  body header .vpContainer .tekst .tekstContainer ul li a {
+    font-size: 1.4em;
+    margin: 1em;
+    padding: 1em;
+  }
+  body main .vpContainer .tekst {
+    margin-top: 3em;
+  }
+  body main .vpContainer .tekst .tekstContainer {
+    margin: 1.2em;
+    margin-top: 1em;
+  }
+  body main #over p {
+    margin-top: 3em;
+    font-size: 1em;
+  }
+  body main .projectenContainer {
+    height: 78vh;
+    margin-top: 2em;
+  }
+  body main .projectenContainer ul li .card {
+    height: 26vh;
+  }
+  body main .projectenContainer ul li .card h5 {
+    font-size: 1.2em;
+  }
+  body main .projectenContainer ul li .card p {
+    font-size: 0.9em;
+  }
+  body main .projectenContainer ul li .card a {
+    font-size: 0.9em;
+  }
+  body main .contact .fotoContainer {
+    height: 93%;
+  }
+  body main .contact .tekst {
+    height: 93%;
+    margin: 0;
+  }
+  body main .contact .tekst .tekstContainer {
+    margin: 3em;
+    height: auto;
+  }
+  body main .contact .tekst .tekstContainer .kanalen {
+    margin-top: 9em;
+  }
+  body main .contact .tekst .tekstContainer .kanalen a .kanaal .circle-icon {
+    font-size: 4em;
+    padding: 0.6em;
+  }
+  body main .contact footer {
+    height: 7%;
+    padding: 1em;
+  }
+  body main .contact footer .footerTekst {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

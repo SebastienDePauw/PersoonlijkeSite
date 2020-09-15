@@ -1,34 +1,37 @@
-body .vpContainer {
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body .vpContainerSmall {
   position: relative;
   min-height: 100vh;
 }
 
-body .vpContainer main {
+body .vpContainerSmall main {
   padding-bottom: 3em;
 }
 
-body .vpContainer main h1 {
+body .vpContainerSmall main h1 {
+  font-family: "Gayathri", sans-serif;
   text-align: center;
-  width: 100%;
-  font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.5em;
 }
 
-body .vpContainer main .kanalen {
+body .vpContainerSmall main .kanalen {
   margin-top: 4em;
   margin: 1em;
 }
 
-body .vpContainer main .kanalen a {
+body .vpContainerSmall main .kanalen a {
   text-decoration: none;
   color: #fafafa;
 }
 
-body .vpContainer main .kanalen a:active {
+body .vpContainerSmall main .kanalen a:active {
   font-weight: bold;
 }
 
-body .vpContainer main .kanalen a .kanaal {
+body .vpContainerSmall main .kanalen a .kanaal {
   background-color: #343a40;
   margin: 2em auto;
   font-size: 2.2em;
@@ -39,28 +42,30 @@ body .vpContainer main .kanalen a .kanaal {
   padding: 0.4em;
 }
 
-body .vpContainer main .kanalen a .kanaal:hover {
+body .vpContainerSmall main .kanalen a .kanaal:hover {
   color: #c8af96;
   text-decoration: none;
 }
 
-body .vpContainer footer {
+body .vpContainerSmall footer {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  body .vpContainer main {
+  body .vpContainerSmall main {
     padding-bottom: 7em;
   }
-  body .vpContainer main .kanalen {
+  body .vpContainerSmall main h1 {
+    font: 2.5em;
+  }
+  body .vpContainerSmall main .kanalen {
     margin-top: 5em;
     margin: 2em;
   }
-  body .vpContainer main .kanalen a .kanaal {
-    margin: 1.5em auto;
-    font-size: 3em;
+  body .vpContainerSmall main .kanalen a .kanaal {
+    font-size: 2em;
     padding: 0.3em;
   }
 }

@@ -1,24 +1,28 @@
 $wit:rgb(255, 255, 255);
-;
 $gebrokenWit:rgb(250, 250, 250);
+$warmWit:rgb(255, 255, 246);
 $lichtGrijs:rgb(151, 153, 156);
 $donkerGrijs:#343a40;
 $goud:rgb(200, 175, 150);
+$titelFont: 'Gayathri', sans-serif;
+$bodyFont:'Lora', serif;
+$navFont: 'Ubuntu', sans-serif;
 
 body {
-    .vpContainer {
+    font-family: $navFont;
+
+    .vpContainerSmall {
         position: relative;
         min-height: 100vh;
 
         main {
-            padding: 0;
+            padding-top: 1em;
             margin:0;
             
             h1{
-                font-weight: bold;
-                font-size:3rem;
+                font-size:2.3em;
                 text-align: center;
-                margin-top: 1em;;
+                font-family: $titelFont;
             }
 
             ul {
@@ -29,6 +33,7 @@ body {
                 li {
                     margin: 0;
                     margin-top: 1.5em;
+
                     &:last-child{
                         padding-bottom: 4em;
                     }
@@ -38,9 +43,16 @@ body {
                         color: $gebrokenWit;
 
                         .card-body {
+                            .card-title{
+                                font-size: 1.5em;
+                            }
+                            .card-text{
+                                font-size: 1em;
+                            }
                             .btn {
                                 background-color: $lichtGrijs;
                                 border: 1px solid black;
+                                font-size: 1em;
 
                                 a {
                                     text-decoration: none;
@@ -72,7 +84,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     body {
-        .vpContainer {
+        .vpContainerSmall {
             main {    
                h1{
                    margin:1.2em auto;
@@ -88,6 +100,10 @@ body {
                                 font-size: 1.1em;
                                 .card-title{
                                     font-size:1.7em;
+                                }
+
+                                .card-text{
+                                font-size: 1.3em;
                                 }
                                 .btn {
                                     border: 1px solid black;

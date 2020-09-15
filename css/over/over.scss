@@ -1,20 +1,39 @@
+$wit:rgb(255, 255, 255);
+$gebrokenWit:rgb(250, 250, 250);
+$warmWit:rgb(255, 255, 246);
+$lichtGrijs:rgb(151, 153, 156);
+$donkerGrijs:#343a40;
+$goud:rgb(200, 175, 150);
+$titelFont: 'Gayathri', sans-serif;
+$bodyFont:'Lora', serif;
+$navFont: 'Ubuntu', sans-serif;
+
 body {
-    .vpContainer {
+    .vpContainerSmall {
         position: relative;
         min-height: 100vh;
 
         main {
-            margin: 0;
-
+            margin:0;
             .fotoContainer {
                 img {
                     max-width: 100%;
                 }
             }
 
-            .tekstContainer {
+            .tekstContainerSmall {
                 padding: 1em;
                 padding-bottom: 2.5em;
+
+                h1{
+                    font-family: $titelFont;
+                    font-size: 2.3em;
+                    text-align: center;
+                }
+
+                .cv{
+                    padding-bottom: 2.5em;
+                }
             }
         }
 
@@ -28,7 +47,7 @@ body {
 
 @media only screen and (min-width: 768px) {
     body {
-        .vpContainer {
+        .vpContainerSmall {
             main {
                 .fotoContainer {
                     img {
@@ -36,7 +55,7 @@ body {
                     }
                 }
     
-                .tekstContainer {
+                .tekstContainerSmall {
                     margin-top: 2em;
                     padding: 1.2em;
                     padding-bottom: 7em;

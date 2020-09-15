@@ -1,83 +1,98 @@
-body .vpContainer {
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body .vpContainerSmall {
   position: relative;
   min-height: 100vh;
 }
 
-body .vpContainer main {
-  padding: 0;
+body .vpContainerSmall main {
+  padding-top: 1em;
   margin: 0;
 }
 
-body .vpContainer main h1 {
-  font-weight: bold;
-  font-size: 3rem;
+body .vpContainerSmall main h1 {
+  font-size: 2.3em;
   text-align: center;
-  margin-top: 1em;
+  font-family: "Gayathri", sans-serif;
 }
 
-body .vpContainer main ul {
+body .vpContainerSmall main ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-body .vpContainer main ul li {
+body .vpContainerSmall main ul li {
   margin: 0;
   margin-top: 1.5em;
 }
 
-body .vpContainer main ul li:last-child {
+body .vpContainerSmall main ul li:last-child {
   padding-bottom: 4em;
 }
 
-body .vpContainer main ul li .card {
+body .vpContainerSmall main ul li .card {
   width: 100%;
   background-color: #343a40;
   color: #fafafa;
 }
 
-body .vpContainer main ul li .card .card-body .btn {
-  background-color: #97999c;
-  border: 1px solid black;
+body .vpContainerSmall main ul li .card .card-body .card-title {
+  font-size: 1.5em;
 }
 
-body .vpContainer main ul li .card .card-body .btn a {
+body .vpContainerSmall main ul li .card .card-body .card-text {
+  font-size: 1em;
+}
+
+body .vpContainerSmall main ul li .card .card-body .btn {
+  background-color: #97999c;
+  border: 1px solid black;
+  font-size: 1em;
+}
+
+body .vpContainerSmall main ul li .card .card-body .btn a {
   text-decoration: none;
   color: #fafafa;
 }
 
-body .vpContainer main ul li .card .card-body .btn:hover {
+body .vpContainerSmall main ul li .card .card-body .btn:hover {
   background-color: #c8af96;
 }
 
-body .vpContainer main ul li .card .card-body .btn:active {
+body .vpContainerSmall main ul li .card .card-body .btn:active {
   background-color: #c8af96;
   font-weight: bold;
 }
 
-body .vpContainer footer {
+body .vpContainerSmall footer {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
-  body .vpContainer main h1 {
+  body .vpContainerSmall main h1 {
     margin: 1.2em auto;
   }
-  body .vpContainer main ul li {
+  body .vpContainerSmall main ul li {
     margin-top: 1.2em;
   }
-  body .vpContainer main ul li:last-child {
+  body .vpContainerSmall main ul li:last-child {
     padding-bottom: 7em;
   }
-  body .vpContainer main ul li .card .card-body {
+  body .vpContainerSmall main ul li .card .card-body {
     font-size: 1.1em;
   }
-  body .vpContainer main ul li .card .card-body .card-title {
+  body .vpContainerSmall main ul li .card .card-body .card-title {
     font-size: 1.7em;
   }
-  body .vpContainer main ul li .card .card-body .btn {
+  body .vpContainerSmall main ul li .card .card-body .card-text {
+    font-size: 1.3em;
+  }
+  body .vpContainerSmall main ul li .card .card-body .btn {
     border: 1px solid black;
     font-size: 1.1em;
   }
