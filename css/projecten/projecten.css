@@ -34,6 +34,7 @@ body .vpContainerSmall main ul li:last-child {
 }
 
 body .vpContainerSmall main ul li .card {
+  border: 2px solid black;
   width: 100%;
   background-color: #343a40;
   color: #fafafa;
