@@ -337,9 +337,6 @@ body footer .footerTekstSmall {
   body main .contact .tekst {
     height: 93%;
   }
-  body main .contact .tekst .tekstContainer p {
-    font-size: 1.5em;
-  }
   body main .contact .tekst .tekstContainer .kanalen {
     display: -webkit-box;
     display: -ms-flexbox;
